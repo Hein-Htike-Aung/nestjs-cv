@@ -1,0 +1,51 @@
+### create user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "aung@gmail.com",
+    "password": "aungaung"
+}   
+
+
+### sign in
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "aung@gmail.com",
+    "password": "aungaung"
+}  
+
+### Get Current User
+GET http://localhost:3000/auth/current-user
+
+
+### Logout
+GET http://localhost:3000/auth/logout
+
+
+### GET Users By Id
+GET http://localhost:3000/auth/3
+
+
+### GET all Users with particular email address
+GET http://localhost:3000/auth?email=admin@gmail.com
+
+
+### GET all User
+GET http://localhost:3000/auth
+
+
+### Update User
+PATCH  http://localhost:3000/auth/update/4
+Content-Type: application/json
+
+{
+    "email": "updated@gmail.com",
+    "password": "updated"
+}   
+
+
+### delete user
+DELETE http://localhost:3000/auth/delete/2
